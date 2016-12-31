@@ -6,7 +6,7 @@
       function Deck() {
         this.cards = [{
           name: 'Addi Baird',
-          url: imgRoot + 'Addi.JPG',
+        url: imgRoot + 'Addi.JPG',
         }, {
           name: 'Anna Baird',
           url: imgRoot + 'Anna.JPG',

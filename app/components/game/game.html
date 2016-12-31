@@ -12,8 +12,6 @@
             <div class="flip" ng-repeat="card in $ctrl.deck track by $index" ng-show="!$ctrl.victory">
                 <div class="card" ng-class="{'flipped':card.show}" ng-click="$ctrl.selectCard(card)">
                     <div class="face front">
-                        <!--Do I want a picture on the front of the card???-->
-                        <!--<img src="assets/img/cards/dwarf-face.png" style="background-color: white;" height="120" alt="Logo">-->
                         <h2>Cousin Memory</h2>
                         <i class="fa fa-question" aria-hidden="true"></i>
                     </div>
@@ -24,8 +22,9 @@
                 </div>
             </div>
 
-            <div class="alert alert-success" ng-show="$ctrl.victory">
-                <h1>YOU WON! It took you {{$ctrl.attempts}} to find all your cousins. Can you beat your score?</h1>
+            <div ng-show="$ctrl.victory">
+                <h1><b>YOU WON!</b></h1> 
+                <h1>It took you {{$ctrl.attempts}} tries to find all your cousins. Can you beat your score?</h1>
             </div>
 
         </div>
