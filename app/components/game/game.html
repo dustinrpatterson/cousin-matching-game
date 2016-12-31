@@ -1,28 +1,33 @@
 <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="flexThis">
+            <h1>The Cousin Memory Game</h1>
             <h1>Found Pairs: {{$ctrl.pairs}}</h1>
-            <button ng-click=$ctrl.resetGame()>RESET GAME</button>
-        </div>
-        <div class="row text-center">
-            <div class="col-sm-10 col-sm-offset-1">
-                <div class="flip col-sm-3" ng-repeat="card in $ctrl.deck track by $index" ng-show="!$ctrl.victory">
-                    <div class="card" ng-class="{'flipped':card.show}" ng-click="$ctrl.selectCard(card)">
-                        <div class="face front">
-                            <!--Do I want a picture on the front of the card???-->
-                            <!--<img src="assets/img/cards/dwarf-face.png" style="background-color: white;" height="120" alt="Logo">-->
-                            <h3>Cousin Memory</h3>
-                        </div>
-                        <div class="face back">
-                            <h3>{{card.name}}</h3>
-                            <img ng-src="{{card.url}}" height="80" alt="{{card.name}}">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="alert alert-success" ng-show="$ctrl.victory">
-                    <h1>You are victorious, However it took you a ridiculous {{$ctrl.attempts}} attempts to win. Perhaps you should focus on your memory rather than drinking <a href="http://freedrinkpubs.co.uk/register" target="_blank">Claim your free Pint</a></h1>
-                </div>
-
-            </div>
+            <bbutton type="button" class="btn btn-danger btn-lg" ng-click=$ctrl.resetGame()>RESET GAME</button>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="flexThis text-center ">
+
+            <div class="flip" ng-repeat="card in $ctrl.deck track by $index" ng-show="!$ctrl.victory">
+                <div class="card" ng-class="{'flipped':card.show}" ng-click="$ctrl.selectCard(card)">
+                    <div class="face front">
+                        <!--Do I want a picture on the front of the card???-->
+                        <!--<img src="assets/img/cards/dwarf-face.png" style="background-color: white;" height="120" alt="Logo">-->
+                        <h2>Cousin Memory</h2>
+                        <i class="fa fa-question" aria-hidden="true"></i>
+                    </div>
+                    <div class="face back">
+                        <h3>{{card.name}}</h3>
+                        <img ng-src="{{card.url}}" height="180" alt="{{card.name}}">
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-success" ng-show="$ctrl.victory">
+                <h1>YOU WON! It took you {{$ctrl.attempts}} to find all your cousins. Can you beat your score?</h1>
+            </div>
+
+        </div>
+    </div>
+</div>

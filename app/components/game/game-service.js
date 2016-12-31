@@ -1,9 +1,9 @@
-;(function () {
+; (function () {
   angular.module('cousinMemory')
     .service('GameService', function () {
       var imgRoot = 'assets/img/cards/'
 
-      function Deck () {
+      function Deck() {
         this.cards = [{
           name: 'Addi Baird',
           url: imgRoot + 'Addi.JPG',
@@ -64,9 +64,9 @@
         return shuffled
       }
 
-      function shuffle (deck) {
-        for (var j, x, i = deck.length; i; j = Math.floor(Math.random() * i), x = deck[--i], deck[i] = deck[j], deck[j] = x) {}
+      function shuffle(deck) {
+        for (var j, x, i = deck.length; i; j = Math.floor(Math.random() * i), x = deck[--i], deck[i] = deck[j], deck[j] = x) { }
         return deck
       }
     })
-}())
+} ())

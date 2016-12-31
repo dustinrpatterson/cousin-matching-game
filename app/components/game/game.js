@@ -80,11 +80,11 @@
 
     // Bonus Challenge: Write a function on gc that can reset the game and add a button that calls it
     gc.resetGame = function () {
-      gc.deck = GameService.getDeck()
       gc.selectionOne = null;
       gc.selectionTwo = null;
       gc.attempts = 0;
       gc.pairs = 0;
+      gc.deck = GameService.getDeck()
       gc.victory = false;
     }
 
