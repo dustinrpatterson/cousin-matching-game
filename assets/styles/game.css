@@ -1,5 +1,12 @@
 body {
- background: #ccc;   
+  background:url(../img/cards/background3.jpg) bottom center;
+  background-size: cover 
+}
+.flexThis{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:center;
 }
 .flip {
   -webkit-perspective: 800;

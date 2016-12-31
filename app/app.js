@@ -1,5 +1,5 @@
 ;(function () {
 
-	angular.module('dwarfMatch', [])
+	angular.module('cousinMemory', [])
 
 }())

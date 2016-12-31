@@ -8,12 +8,13 @@
                 <div class="flip col-sm-3" ng-repeat="card in $ctrl.deck track by $index" ng-show="!$ctrl.victory">
                     <div class="card" ng-class="{'flipped':card.show}" ng-click="$ctrl.selectCard(card)">
                         <div class="face front">
-                            <img src="assets/img/cards/dwarf-face.png" style="background-color: white;" height="120" alt="Logo">
-                            <h3>Dwarf Match</h3>
+                            <!--Do I want a picture on the front of the card???-->
+                            <!--<img src="assets/img/cards/dwarf-face.png" style="background-color: white;" height="120" alt="Logo">-->
+                            <h3>Cousin Memory</h3>
                         </div>
                         <div class="face back">
-                            <h3>{{card.title}}</h3>
-                            <img ng-src="{{card.url}}" height="80" alt="{{card.title}}">
+                            <h3>{{card.name}}</h3>
+                            <img ng-src="{{card.url}}" height="80" alt="{{card.name}}">
                         </div>
                     </div>
                 </div>

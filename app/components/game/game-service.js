@@ -1,45 +1,60 @@
 ;(function () {
-  angular.module('dwarfMatch')
+  angular.module('cousinMemory')
     .service('GameService', function () {
       var imgRoot = 'assets/img/cards/'
 
       function Deck () {
         this.cards = [{
-          title: 'Battle Axe',
-          url: imgRoot + 'battle-axe.png',
+          name: 'Addi Baird',
+          url: imgRoot + 'Addi.JPG',
         }, {
-          title: 'Beard',
-          url: imgRoot + 'beard.png',
+          name: 'Anna Baird',
+          url: imgRoot + 'Anna.JPG',
         }, {
-          title: 'Beer Stein',
-          url: imgRoot + 'beer-stein.png',
+          name: 'Calla Avondet',
+          url: imgRoot + 'Calla.JPG',
         }, {
-          title: 'BreastPlate',
-          url: imgRoot + 'breastplate.png',
+          name: 'Halle Hunter',
+          url: imgRoot + 'Halle.JPG',
         }, {
-          title: 'Broadsword',
-          url: imgRoot + 'broadsword.png',
+          name: 'Hudson Hunter',
+          url: imgRoot + 'Hudson.JPG',
         }, {
-          title: 'Brutal Helm',
-          url: imgRoot + 'brutal-helm.png',
+          name: 'Huntley Bradshaw',
+          url: imgRoot + 'Huntley.JPG',
         }, {
-          title: 'Crossed Axes',
-          url: imgRoot + 'crossed-axes.png',
+          name: 'James Baird',
+          url: imgRoot + 'James.JPG',
         }, {
-          title: 'Emerald',
-          url: imgRoot + 'emerald.png',
+          name: 'Jamie Bradshaw',
+          url: imgRoot + 'Jamie.JPG',
         }, {
-          title: 'Hammer',
-          url: imgRoot + 'flat-hammer.png',
+          name: 'Landen Patterson',
+          url: imgRoot + 'Landen.JPG',
         }, {
-          title: 'Gauntlet',
-          url: imgRoot + 'mailed-fist.png',
+          name: 'Maizy Hunter',
+          url: imgRoot + 'Maizy.JPG',
         }, {
-          title: 'Meat',
-          url: imgRoot + 'meat.png',
+          name: 'Marcus Hunter',
+          url: imgRoot + 'Marcus.JPG',
         }, {
-          title: 'Pick Axe',
-          url: imgRoot + 'mining.png',
+          name: 'Miles Hunter',
+          url: imgRoot + 'Miles.JPG',
+        }, {
+          name: 'Reagan Avondet',
+          url: imgRoot + 'Reagan.jpg',
+        }, {
+          name: 'Remington Bradshaw',
+          url: imgRoot + 'Remington.JPG',
+        }, {
+          name: 'Stella Hunter',
+          url: imgRoot + 'Stella.JPG',
+        }, {
+          name: 'Sydnee Patterson',
+          url: imgRoot + 'Sydnee.JPG',
+        }, {
+          name: 'Tinlee Patterson',
+          url: imgRoot + 'Tinlee.JPG',
         }]
       }
 

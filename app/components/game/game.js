@@ -1,5 +1,5 @@
 ; (function () {
-  angular.module('dwarfMatch')
+  angular.module('cousinMemory')
     .component('gameComponent', {
       controller: GameController,
       templateUrl: 'app/components/game/game.html'
@@ -56,7 +56,7 @@
     // back to readme.md
     gc.isMatch = function (card) {
       gc.attempts++
-      if (gc.selectionOne.title == gc.selectionTwo.title) {
+      if (gc.selectionOne.name == gc.selectionTwo.name) {
         gc.pairs++
         gc.selectionOne = null;
         gc.selectionTwo = null;
